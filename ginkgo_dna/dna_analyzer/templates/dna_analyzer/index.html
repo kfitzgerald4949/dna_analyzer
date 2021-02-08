@@ -1,0 +1,19 @@
+<!--index.html-->
+<html lang="en" dir="ltr">
+	<head>
+	 <meta charset="utf-8">
+	 <title>DNA Protein Analizer</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 {% load static %}
+	 <script defer src="{% static 'dna_analyzer/index.js' %}" charset="uft-8"></script>
+	</head>
+	<body>
+		<div id="sequence_input">
+			<p>Enter the DNA sequence for protein search</p>
+			<input type="text" id="sequence" name="sequence">
+			<button id="startAnalysis">Begin search</button>
+		</div>
+		<div id="analysis_results">
+		</div>
+	</body>
+</html>
